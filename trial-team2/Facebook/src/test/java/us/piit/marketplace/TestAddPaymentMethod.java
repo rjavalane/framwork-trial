@@ -22,7 +22,19 @@ public class TestAddPaymentMethod extends CommonAPI {
         marketPlacePage.clickOnFacebookPayBtn();
         marketPlacePage.clickOnAddPaymentMethod();
         marketPlacePage.clickOnCreditOrDebitCard();
+        Assert.assertEquals(marketPlacePage.getTextTitle(), "Add credit or debit card");
         marketPlacePage.typeOnCartNumberField();
+        marketPlacePage.typeOnExpirationDateField();
+        marketPlacePage.typeOnCCVField();
+        marketPlacePage.clickOnCountry();
+        marketPlacePage.typeNameCardField();
+        marketPlacePage.typeOnBillingAddress1Field();
+        marketPlacePage.typeOnBillingAddress2Field();
+        marketPlacePage.typeOnCityField();
+        marketPlacePage.typeOnStateField();
+        marketPlacePage.typeOnZipCodeField();
+        Assert.assertTrue(marketPlacePage.saveBtn.isEnabled());
+        marketPlacePage.clickOnSaveBtn();
         Assert.assertEquals(marketPlacePage.getErrorMessage(), "Please enter a valid credit or debit card number.");
     }
 }

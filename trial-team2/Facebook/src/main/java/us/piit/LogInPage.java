@@ -46,6 +46,14 @@ public class LogInPage extends CommonAPI {
     WebElement loginButton;
     @FindBy(xpath = "//a[text()='Find your account and log in.']")
     WebElement errorMessage;
+    @FindBy(xpath = "//a[contains(text(),'Forgot password?')]")
+    WebElement forgotPasswordBtn;
+    @FindBy(xpath = "//input[@id='identify_email']")
+    WebElement emailField2;
+    @FindBy(xpath = "//button[@id='did_submit']")
+    WebElement searchBtn;
+    @FindBy(xpath = "//button[@name='reset_action']")
+    WebElement continueBtn;
 
 
     public String getConfirmationCode() {

@@ -40,8 +40,11 @@ public class Account extends CommonAPI {
     WebElement buygiftcards;
     @FindBy(xpath = "//a[text()='Where to buy gift cards']")
     WebElement wheretobuygiftcards;
-    @FindBy(xpath = "//button[text()='See more']")
+    @FindBy(xpath = "//button[text()='Buy in store']")
+    WebElement buyinstore;
+    @FindBy(xpath = "//button[@id='retailers-toggle']")
     WebElement seemore;
+
 
 
 
@@ -60,7 +63,8 @@ public class Account extends CommonAPI {
     public void clickOnRedeemGiftCardOrPromoCode(){click(redeemgiftcardorpromocode);}
     public void clickOnBuyGiftCards(){click(buygiftcards);}
     public void clickOnWhereToBuyGiftCards(){click(wheretobuygiftcards);}
-    public void scrollDownToSeeMore(){click(seemore);}
+    public void clickOnBuyInStore(){click(buyinstore);}
+    public void scrollDownToSeeMore(){scrollToView(seemore);}
 
 
 

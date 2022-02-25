@@ -15,4 +15,11 @@ public class SearchSingleElement extends CommonAPI {
         homePage.searchelements("monitor");
         Assert.assertEquals(getTitle(),"Monitor-Monitor Manufacturers, Suppliers and Exporters on Alibaba.comTouch Screen Monitors");
     }
+    @Test
+
+    public void searchecellphone() {
+        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
+        homePage.searchelements("cellphone");
+       //Assert.assertEquals(getTitle(),"Monitor-Monitor Manufacturers, Suppliers and Exporters on Alibaba.comTouch Screen Monitors");
+    }
 }

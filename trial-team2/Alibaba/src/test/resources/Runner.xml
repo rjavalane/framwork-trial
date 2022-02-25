@@ -13,7 +13,7 @@
     <test name="Alibaba test">
         <classes>
 
-<<<<<<< HEAD
+
             <class name="us.piit.search.SearchSingleElement"></class>
 <!--            <class name="us.piit.search.SearchMultiElement"></class>-->
 <!--            <class name="us.piit.loging.LogInWithWrongInfo"></class>-->
@@ -26,7 +26,7 @@
 <!--            <class name="us.piit.buyercentral.BuyerCentralList"></class>-->
 <!--            <class name="us.piit.changelanguage.selectlanguage"></class>-->
 
-=======
+
 
 <!--            <class name="us.piit.loging.LogInWithWrongInfo"></class>-->
 <!--            <class name="us.piit.loging.LogInWithRightCredentials"></class>-->
@@ -38,7 +38,6 @@
 <!--            <class name="us.piit.buyercentral.BuyerCentralList"></class>-->
 <!--            <class name="us.piit.changelanguage.selectlanguage"></class>-->
 
->>>>>>> 7d0172778b9b1d93c9ea6836549ef268c74d0200
 <!--            <class name="us.piit.globalorigin.GlobalOriginSources"></class>-->
 <!--            <class name="us.piit.apparellist.ApparelList"></class>-->
 <!--            <class name="us.piit.countrylist.CountrySelection"></class>-->

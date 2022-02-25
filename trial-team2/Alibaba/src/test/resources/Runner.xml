@@ -13,8 +13,7 @@
     <test name="Alibaba test">
         <classes>
 
-            <class name="us.piit.search.SearchSingleElement"></class>
-<!--            <class name="us.piit.search.SearchMultiElement"></class>-->
+
 <!--            <class name="us.piit.loging.LogInWithWrongInfo"></class>-->
 <!--            <class name="us.piit.loging.LogInWithRightCredentials"></class>-->
 <!--            <class name="us.piit.switchtab.SwitchTabAlibaba"></class>-->

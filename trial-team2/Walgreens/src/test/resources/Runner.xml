@@ -15,7 +15,7 @@
 
 <!--            <class name="us.piit.signup.TestCreateAccount"></class>-->
 <!--            <class name="us.piit.login.TestLoginWithWrongCredentials"></class>-->
-            <class name="us.piit.login.TestLoginWithCorrectCredentials"></class>
+<!--            <class name="us.piit.login.TestLoginWithCorrectCredentials"></class>-->
 <!--            <class name="us.piit.logout.TestLogOut"></class>-->
 <!--            <class name="us.piit.searchproducts.TestSeachTopSellerItem"></class>-->
 <!--            <class name="us.piit.cart.TestAddingProductToCart"></class>-->
@@ -32,7 +32,25 @@
 <!--            <class name="us.piit.menu.TestMedicinesInShopProducts"></class>-->
 <!--            <class name="us.piit.menu.TestVitaminesInShopProduct"></class>-->
 <!--            <class name="us.piit.menu.TestHomeHealthCareInShopProducts"></class>-->
-<!--            <class name="us.piit.menu.TestHomeGoodsInShopProducts"></class>-->
+<!--            <class name="us.piit.homegoods.TestHomeDecorInHomeGoods"></class>-->
+<!--            <class name="us.piit.menu.TestRefillPrescription"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestStorageInHomeGoods"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestHomeImprovementInHomeGoods"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestArtsAndCraft"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestSmallHomeAppliances"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestPartySupplies"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestKitchenAndDining"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestBedAndBath"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestHeatingAndCooling"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestClothingAndShoes"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestLuggageAndTravelGear"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestOutdoorLiving"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestAutomotive"></class>&ndash;&gt;-->
+            <class name="us.piit.homegoods.TestAsSeenOnTV"></class>-->
+<!--            <class name="us.piit.homegoods.TestStorageInHomeGoods"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestStorageInHomeGoods"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestStorageInHomeGoods"></class>&ndash;&gt;-->
+<!--            <class name="us.piit.homegoods.TestStorageInHomeGoods"></class>&ndash;&gt;-->
 
 
 

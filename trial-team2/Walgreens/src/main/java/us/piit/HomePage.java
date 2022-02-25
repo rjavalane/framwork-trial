@@ -81,16 +81,98 @@ public class HomePage extends CommonAPI {
     WebElement homedecorbtn;
     @FindBy(xpath = "//header/div[1]/nav[1]/div[1]/div[1]/div[2]/div[1]/nav[1]/ul[1]/li[5]/ul[1]/li[9]/div[1]/ul[1]/li[3]/ul[1]/li[8]/a[1]")
     WebElement decorativeaccentsbtn;
+    @FindBy (xpath = "//span[text()='Prescriptions']")
+    public
+    WebElement prescriptionsbtn;
+    @FindBy(css = "#refills")
+    public
+    WebElement prescriptionsrefillsbtn;
+    @FindBy(xpath = "//span[text()='Storage & Organization']")
+    public
+    WebElement storagebtn;
+    @FindBy(xpath = "(//a[text()='Bathroom Storage & Organization'])[1]")
+    public
+    WebElement bathroomstoragebtn;
+    @FindBy(xpath = "//span[text()='Home Improvement']")
+    public
+    WebElement homeimprovementbtn;
+    @FindBy(xpath = "//a[text()='Light Bulbs']")
+    public
+    WebElement lightbulbsbtn;
+    @FindBy(xpath = "(//span[text()='Arts & Crafts'])[1]")
+    public
+    WebElement artsandcraftbtn;
+    @FindBy(xpath = "(//a[text()='Painting Supplies'])[1]")
+    public
+    WebElement paintingsuppliesbtn;
+    @FindBy(xpath = "//span[text()='Small Home Appliances']")
+    public
+    WebElement smallhomeappliancesbtn;
+    @FindBy(xpath = "//a[text()='Sewing Tools & Accessories']")
+    public
+    WebElement sewingtoolsbtn;
+    @FindBy(xpath = "//span[text()='Party Supplies, Cards & Gift Wrap']")
+    public
+    WebElement partysuppliesbtn;
+    @FindBy(xpath = "//a[text()='Gift Wrap, Bags & Accessories']")
+    public
+    WebElement giftwrapbagbtn;
+    @FindBy(xpath = "//span[text()='Kitchen & Dining']")
+    public
+    WebElement kitchenanddiningbtn;
+    @FindBy(xpath = "//a[text()='Kitchen Utensils']")
+    public
+    WebElement kitchenutensilsbtn;
+    @FindBy(xpath = "//span[text()='Bed & Bath']")
+    public
+    WebElement bedandbathbtn;
+    @FindBy(xpath = "(//a[text()='Blankets & Throws'])[2]")
+    public
+    WebElement blanketsandthrowsbtn;
+    @FindBy(xpath = "//span[text()='Heating, Cooling & Air Quality']")
+    public
+    WebElement heatingandcoolingbtn;
+    @FindBy(xpath = "//a[text()='Fans']")
+    public
+    WebElement fansbtn;
+    @FindBy(xpath = "//span[text()='Clothing, Shoes & Accessories']")
+    public
+    WebElement clothingandshoesbtn;
+    @FindBy(xpath = "//strong[text()='Sale on Clothing, Shoes & Accessories']")
+    public
+    WebElement salesonclothingbtn;
+    @FindBy(xpath = "//span[text()='Luggage, Travel Gear & Accessories']")
+    public
+    WebElement luggageandtravelgearbtn;
+    @FindBy(xpath = "//strong[text()='Sale on Luggage, Travel Gear & Accessories']")
+    public
+    WebElement salesonluggagebtn;
+    @FindBy(xpath = "(//span[text()='Outdoor Living'])[1]")
+    public
+    WebElement outdoorlivingbtn;
+    @FindBy(xpath = "(//a[text()='All Weather Essentials'])[1]")
+    public
+    WebElement allweatheressentialbtn;
+    @FindBy(xpath = "(//a[@class='lvl-4-title mobile-more__arrow'])[51]")
+    public
+    WebElement automotivebtn;
+    @FindBy(xpath = "body.position-fixed.menu:nth-child(2) div.nav__wrapper-test.testing:nth-child(1) nav.nav__top div.nav__top-container div.contain-header-links div.dropdown.dropdown__menu div.default-dropdown.menu-dropdown.show nav.nav__main ul.nav__main-container li.dropdown.dropdown__mega-container:nth-child(5) ul.mega-dropdown.show-next-lvl.remove-padding li.mega-dropdown__master-title.testing:nth-child(9) div.mega-dropdown__menu.show-next-lvl.remove-padding div.right-links li:nth-child(7) ul.container__list-lvl-2.show-on-mobile.show-next-lvl li:nth-child(9) a:nth-child(1) > strong:nth-child(1)")
+    public
+    WebElement salesonautomotivebtn;
+    @FindBy(xpath = "//span[text()='As Seen On TV']")
+    public
+    WebElement asseenontvbtn;
 
 
 
 
 
 
-   public void  clickOnAccountBtn(){
+
+    public void  clickOnAccountBtn(){
        click(accountbtn);
    }
-   public void clickOnRegisterBtn(){
+    public void clickOnRegisterBtn(){
        click(registerbtn);
    }
     public void clickOnSigninBtn(){
@@ -142,6 +224,33 @@ public class HomePage extends CommonAPI {
     public void homeGoodsBtn(){click(homegoodsbtn);}
     public void homeDecorBtn(){click(homedecorbtn);}
     public void setDecorativeAccentsBtn(){click(decorativeaccentsbtn);}
+    public void prescriptionsBtn(){click(prescriptionsbtn);}
+    public void prescriptionsRefillsBtn(){click(prescriptionsrefillsbtn);}
+    public void StorageBtn(){click(storagebtn);}
+    public void bathroomStorageBtn(){click(bathroomstoragebtn);};
+    public void homeImprovementBtn(){click(homeimprovementbtn);}
+    public void lightBulbsBtn(){click(lightbulbsbtn);}
+    public void artsAndCraftBtn(){click(artsandcraftbtn);}
+    public void paintingSuppliesBtn(){click(paintingsuppliesbtn);}
+    public void smallHomeAppliancesBtn(){click(smallhomeappliancesbtn);}
+    public void sewingToolsBtn(){click(sewingtoolsbtn);}
+    public void partySuppliesBtn(){click(partysuppliesbtn);}
+    public void giftWrapBagBtn(){click(giftwrapbagbtn);}
+    public void kitchenAndDiningBtn(){click(kitchenanddiningbtn);}
+    public void kitchenUtensilsBtn(){click(kitchenutensilsbtn);}
+    public void BedAndBathBtn(){click(bedandbathbtn);}
+    public void blanketsAndThrowsBtn(){click(blanketsandthrowsbtn);}
+    public void heatingAndCoolingBtn(){click(heatingandcoolingbtn);}
+    public void FansBtn (){click(fansbtn);}
+    public void clothingAndShoesBtn(){click(clothingandshoesbtn);}
+    public void salesOnCothingBtn(){click(salesonclothingbtn);}
+    public void luggageAndTravelGearBtn(){click(luggageandtravelgearbtn);}
+    public void salesOnLuggageBtn(){click(salesonluggagebtn);}
+    public void outdoorLivingBtn(){click(outdoorlivingbtn);}
+    public void allWeatherEssentialBtn(){click(allweatheressentialbtn);}
+    public void AutomotiveBtn(){click(automotivebtn);}
+    public void salesOnAutomotiveBtn(){click(automotivebtn);}
+    public void aasSeenOnTVBtn(){click(asseenontvbtn);}
 
 
 

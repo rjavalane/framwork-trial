@@ -57,6 +57,20 @@ public class ProfilPage extends CommonAPI {
     WebElement languages;
     @FindBy(xpath = "(//input[@value='Save changes']")
     WebElement saveChangesButton;
+    @FindBy(xpath = "(//div[@aria-label='Messenger'])[1]")
+    WebElement messengerBtn;
+    @FindBy(xpath = "(//input[@aria-label='Search Messenger'])[1]")
+    WebElement searchMessengerField;
+    @FindBy(xpath = "//span[text()='Amirouche Boudissa']")
+    WebElement nameProfile;
+    @FindBy(xpath = "(//div[@aria-label='Message'])[2]")
+    WebElement messageField;
+    @FindBy(xpath = "//div[@aria-label='Press enter to send']")
+    WebElement sendBtn;
+
+
+
+
     public void clickOnSettingPrivacy(){click(settingPrivacy);}
     public void clickOnLanguageOption(){click(languageOption);}
     public void clickOnEditLink(){click(editLink);}
@@ -93,5 +107,15 @@ public class ProfilPage extends CommonAPI {
     public void typeOnDetailsField(){type(detailsField, "the site bugs");}
     public void clickOnSubmitButton(){click(submitButton);}
     public String getTextDisplayed() {return getText(textDisplayed);}
-
+    public void clickOnMessengerBtn(){click(messengerBtn);}
+    public void typeOnSearchMessengerField(){ type(searchMessengerField, "Amirouche Boudissa");}
+    public void clickOnNameProfile(){
+         Actions action = new Actions(driver);
+        action.moveToElement(nameProfile).click().build().perform();}
+                                                                                         // click(nameProfile);}
+    public void typeOnMessageField(){type(messageField, "Hey, i hope everything is going good for you");}
+    public void clickOnSendBtn(){
+        click(sendBtn);
+    }
+                                                                                     //click(sendBtn);
 }

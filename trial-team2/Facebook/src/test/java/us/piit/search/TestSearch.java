@@ -8,7 +8,7 @@ import us.piit.HomePage;
 import us.piit.LogInPage;
 
 public class TestSearch extends CommonAPI {
-  //  @Test
+    @Test
     public void testsearchFriend() {
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();
@@ -24,7 +24,7 @@ public class TestSearch extends CommonAPI {
 
 
     }
-    //@Test
+    @Test
     public void testSearchPageClimateScienceCenter(){
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();
@@ -40,7 +40,7 @@ public class TestSearch extends CommonAPI {
         Assert.assertEquals(getTitle(),"Climate science center | Facebook");
         waitFor(6);
     }
-   // @Test
+   @Test
     public void testSearchCoronavirusInformationCenterAndFollowIt(){
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();

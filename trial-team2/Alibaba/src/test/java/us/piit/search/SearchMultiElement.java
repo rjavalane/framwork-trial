@@ -19,6 +19,5 @@ public class SearchMultiElement extends CommonAPI {
         for (String item: getItemsFromExcel()) {
             homePage.searchInOneClickAndClear(item);
         }
-
     }
 }

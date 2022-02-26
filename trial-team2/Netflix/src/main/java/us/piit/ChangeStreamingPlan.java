@@ -3,6 +3,7 @@ package us.piit;
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -43,10 +44,24 @@ public class ChangeStreamingPlan extends CommonAPI {
     WebElement resources;
     @FindBy(xpath = "//span[text()='Company Assets']")
     WebElement companyassets;
-
-
-
-
+    @FindBy(xpath = "//span[text()='About Netflix']")
+    WebElement aboutnetflix;
+    @FindBy(xpath = "//span[text()='Newsroom']")
+    WebElement newsroom;
+    @FindBy(xpath = "(//span[@class='nav-link__StyledNavLink-fm5ilr-0 dUCDPp'])[3]")
+    WebElement topten;
+    @FindBy(xpath = "//span[text()='Privacy Statement']")
+    WebElement privacystatment;
+    @FindBy(xpath = "//li[@class='footer-link-item footer-link-jobs']")
+    WebElement jobs;
+    @FindBy(xpath = "//li[@class='footer-link-item footer-link-gift-card']")
+    WebElement giftcards;
+    @FindBy(xpath = "//li[@class='footer-link-item footer-link-cookies']")
+    WebElement cookiepreferences;
+    @FindBy(xpath = "//li[@class='footer-link-item footer-link-relations']")
+    WebElement investorrelations;
+    @FindBy(xpath = "//li[@class='footer-link-item footer-link-terms']")
+    WebElement termsofuse;
 
 
 
@@ -66,6 +81,23 @@ public class ChangeStreamingPlan extends CommonAPI {
     public void clickOnMediaCenter(){click(mediacenter);}
     public void clickOnResources(){click(resources);}
     public void clickOnCompanyAssets(){click(companyassets);}
+    public void clickOnAboutNetflix(){click(aboutnetflix);}
+    public void clickOnNewsroom(){click(newsroom);}
+    public void clickOnTopTen(){click(topten);}
+    public void clickOnPrivacyStatment(){click(privacystatment);}
+    public void clickOnJobs(){click(jobs);}
+    public void clickOnGiftCards(){click(giftcards);}
+    public void clickOnCookiePreferences(){click(cookiepreferences);}
+    public void clickOnInvestorRelations(){click(investorrelations);}
+    public void clickOnTermsOfUse(){click(termsofuse);}
+
+
+
+
+
+
+
+
 
 
 }

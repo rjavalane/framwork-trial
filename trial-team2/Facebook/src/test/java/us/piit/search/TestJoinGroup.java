@@ -26,7 +26,7 @@ public class TestJoinGroup extends CommonAPI {
 
     }
 
-    //@Test
+    @Test
     public void testCancelRequestToGroup() {
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();

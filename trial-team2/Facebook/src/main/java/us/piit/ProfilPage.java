@@ -32,6 +32,7 @@ public class ProfilPage extends CommonAPI {
     @FindBy(xpath = "//textarea[@style='overflow-y: auto;']")
     WebElement detailsField;
     @FindBy(xpath = "//span[text()='Submit']")
+    public
     WebElement submitButton;
     @FindBy(xpath = "//span[text()='Help & Support']")
     WebElement helpSupport;
@@ -39,8 +40,8 @@ public class ProfilPage extends CommonAPI {
     WebElement helpCenter;
     @FindBy(xpath = "//input[@type='search']")
     WebElement searchField;
-    @FindBy(xpath = "//span[text()='How do I lock my profile on Facebook?']")
-    WebElement askQuestion;
+    @FindBy(xpath = "(//span[text()='Marketplace'])[1]")
+    WebElement marketPlaceIcon;
     @FindBy(xpath = "(//div[@aria-label='Yes'])[3]")
     WebElement yesButton;
     @FindBy(xpath = "//textarea[@style='overflow-y: hidden;']")
@@ -51,7 +52,7 @@ public class ProfilPage extends CommonAPI {
     WebElement settingPrivacy;
     @FindBy(xpath = "//span[text()='Language']")//(//span[text()='Marketplace'])[3]
     WebElement languageOption;
-    @FindBy(xpath = "//a[@data-meta='{\"ajaxify\":\"\\/ajax\\/settings\\/language\\/account.php\",\"rel\":\"async\"}']")
+    @FindBy(xpath = "(//span[text()='Edit'])[1]")
     WebElement editLink;
     @FindBy(xpath = "//select[@name='new_language']")
     WebElement languages;
@@ -73,18 +74,25 @@ public class ProfilPage extends CommonAPI {
 
     public void clickOnSettingPrivacy(){click(settingPrivacy);}
     public void clickOnLanguageOption(){click(languageOption);}
-    public void clickOnEditLink(){click(editLink);}
-       // Actions action = new Actions(driver);
-       // action.moveToElement(editLink).click().build().perform();}
+    public void clickOnEditLink(){                                                   //click(editLink);}
+        Actions action = new Actions(driver);
+        action.moveToElement(editLink).click().build().perform();}
     public void clickOnSaveChanges(){click(saveChangesButton);}
-    public void selectDropdownLanguage(String option) {
+    public void selectDropdownLanguages() {
         selectDropdownOption(languages, "Deutsch");
     }
     public void clickOnhelpSupport(){click(helpSupport);}
     public void clickOnhelpCenter(){click(helpCenter);}
     public void clickOnSearchField(){click(searchField);}
-    public void clickOnMarketOption(){click(askQuestion);}
-    public void acceptAlert(){click(yesButton);}
+    public void scrollDownIntoMarketPlaceIcon(){scrollToView(marketPlaceIcon); }
+    public void clickOnMarketPlaceIcon(){
+        Actions action = new Actions(driver);
+        action.moveToElement(marketPlaceIcon).click().build().perform();}
+
+    public void clickOnYesButton(){
+       click(yesButton);
+        acceptAlert();}
+
     public void typeTheDescription(){type(description, "all right");}
     public String getProfilePageTitle(){
         return getTitle();

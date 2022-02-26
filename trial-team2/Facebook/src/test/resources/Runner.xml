@@ -23,13 +23,16 @@
 <!--            <class name="us.piit.marketplace.TestMarketPlace"></class>-->
 <!--            <class name="us.piit.game.TestGameVideos"></class>-->
 <!--            <class name="us.piit.marketplace.TestAddToCart"></class>-->
+            <class name="us.piit.marketplace.TestCreateAlert"></class>
 <!--            <class name="us.piit.marketplace.TestRemoveFromCart"></class>-->
 <!--            <class name="us.piit.marketplace.TestSetACustomBuyerMessage"></class>-->
 <!--            <class name="us.piit.marketplace.TestAddPaymentMethod"></class>-->
 <!--            <class name="us.piit.marketplace.TestSearcgSingleElement"></class>-->
 <!--            <class name="us.piit.marketplace.TestSeachMultiElements"></class>-->
 <!--                <class name="us.piit.profil.TestTextingFriendFromMessenger"></class>-->
-                            <class name="us.piit.votinginformationcenter.TestCheckingRegistrationToVote"></class>
+<!--                            <class name="us.piit.votinginformationcenter.TestCheckingRegistrationToVote"></class>-->
+<!--            <class name="us.piit.votinginformationcenter.TestGetInformationFromTheCenter"></class>-->
+<!--            <class name="us.piit.votinginformationcenter.TestManageLocation"></class>-->
 
         </classes>
     </test>

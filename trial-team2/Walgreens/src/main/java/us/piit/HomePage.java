@@ -169,7 +169,14 @@ public class HomePage extends CommonAPI {
 
 
 
+
+
+
+
+   public void  clickOnAccountBtn(){
+
     public void  clickOnAccountBtn(){
+
        click(accountbtn);
    }
     public void clickOnRegisterBtn(){

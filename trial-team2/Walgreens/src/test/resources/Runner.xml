@@ -17,7 +17,7 @@
 <!--            <class name="us.piit.login.TestLoginWithWrongCredentials"></class>-->
 <!--            <class name="us.piit.login.TestLoginWithCorrectCredentials"></class>-->
 <!--            <class name="us.piit.logout.TestLogOut"></class>-->
-<!--            <class name="us.piit.searchproducts.TestSeachTopSellerItem"></class>-->
+            <class name="us.piit.searchproducts.TestSeachTopSellerItem"></class>
 <!--            <class name="us.piit.cart.TestAddingProductToCart"></class>-->
 <!--            <class name="us.piit.cart.TestRemoveProductFromCart"></class>-->
 <!--            <class name="us.piit.vacinneoptions.TestVaccineScheduling"></class>-->

@@ -13,8 +13,11 @@
     <test name="Alibaba test">
         <classes>
 
+<!--            <class name="us.piit.search.SearchSingleElement"></class>-->
+
 
             <class name="us.piit.search.SearchSingleElement"></class>
+
 <!--            <class name="us.piit.search.SearchMultiElement"></class>-->
 <!--            <class name="us.piit.loging.LogInWithWrongInfo"></class>-->
 <!--            <class name="us.piit.loging.LogInWithRightCredentials"></class>-->
@@ -24,6 +27,9 @@
 <!--            <class name="us.piit.message.WriteMessage"></class>-->
 <!--            <class name="us.piit.scrolldownto.ScrollDownToNewArrivals"></class>-->
 <!--            <class name="us.piit.buyercentral.BuyerCentralList"></class>-->
+
+<!--            <class name="us.piit.changelanguage.selectlanguage"></class> -->
+
 <!--            <class name="us.piit.changelanguage.selectlanguage"></class>-->
 
 
@@ -38,6 +44,7 @@
 <!--            <class name="us.piit.buyercentral.BuyerCentralList"></class>-->
 <!--            <class name="us.piit.changelanguage.selectlanguage"></class>-->
 
+
 <!--            <class name="us.piit.globalorigin.GlobalOriginSources"></class>-->
 <!--            <class name="us.piit.apparellist.ApparelList"></class>-->
 <!--            <class name="us.piit.countrylist.CountrySelection"></class>-->
@@ -46,9 +53,26 @@
 <!--            <class name="us.piit.sendrequest.SendRequestitems"></class>-->
 <!--            <class name="us.piit.facebooklink.FacebookIconClick"></class>-->
 
+<!--            <class name="us.piit.categoriesliset.Machinery"></class>-->
+<!--            <class name="us.piit.categoriesliset.LightsAndLighting"></class>-->
+<!--            <class name="us.piit.categoriesliset.FabricAndRawMaterial"></class>-->
+<!--            <class name="us.piit.categoriesliset.BeautyAndPersonalCarelist"></class>-->
+<!--            <class name="us.piit.categoriesliset.OfficeAndSchoolSupplies"></class>-->
+<!--            <class name="us.piit.categoriesliset.ToolsAndHardwar"></class>-->
+<!--            <class name="us.piit.categoriesliset.ElectricalEquipmentSupplies"></class>-->
+<!--            <class name="us.piit.categoriesliset.SportAndEntertaiment"></class>-->
+<!--            <class name="us.piit.categoriesliset.LuggageAndBages"></class>-->
+<!--            <class name="us.piit.categoriesliset.FoodAndBeverage"></class>-->
+
+
+
+
+
+
 
 
             
+
 
 
 

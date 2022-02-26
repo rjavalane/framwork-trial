@@ -12,7 +12,7 @@ public class selectlanguage extends CommonAPI {
     public void changelanguageselection(){
         HomePage homePage= new HomePage(driver);
         homePage.hoveroverlanguage(driver);
-       // waitFor(5);
+       waitFor(5);
         homePage.selectlanguage();
     }
 }

@@ -75,11 +75,220 @@ public class HomePage extends CommonAPI {
     WebElement board;
     @FindBy(xpath = "//a[@class='facebook']")
     WebElement facebook;
+    @FindBy(xpath="(//a[text()='Machinery'])[3]")
+    WebElement machinery;
+    @FindBy(xpath = "//header/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/div[1]/a[1]")
+    WebElement lightsTools;
+    @FindBy(xpath = "(//a[text()='Fabric & Textiles Raw Material'])[2]")
+    WebElement fabric;
+    @FindBy(xpath = "(//a[text()='Beauty & Personal Care'])[3]")
+    WebElement BeautyPersonalCare;
+    @FindBy(xpath = "(//a[text()='Office & School Supplies'])[3]")
+    WebElement schoolsupplies;
+    @FindBy(xpath = "(//a[text()='Tools & Hardware'])[3]")
+    WebElement ToolsHardwar;
+    @FindBy(xpath = "(//a[text()='Electrical Equipment & Supplies'])[7]")
+    WebElement ElectricalEquipment;
+    @FindBy(xpath = "(//a[text()='Sports & Entertainment'])[3]")
+    WebElement Sportsequipment;
+    @FindBy(xpath = "(//a[text()='Luggage, Bags & Cases'])[3]")
+    WebElement Luggage;
+    @FindBy(xpath = "(//a[text()='Food & Beverage'])[3]")
+    WebElement foodandbeverage;
 
 
 
 
 
+
+
+
+
+
+    public void alibabaTabFoodBeverage() {
+        click(foodandbeverage);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void getfoodandbeverage(WebDriver driver){
+        hoverOver(driver,foodandbeverage);
+    }
+
+
+
+
+    public void alibabaTabLuggage() {
+        click(Luggage);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void getluggage(WebDriver driver){
+        hoverOver(driver,Luggage);
+    }
+
+
+
+    public void alibabaTabsportequipment() {
+        click(Sportsequipment);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void getsportequipment(WebDriver driver){
+        hoverOver(driver,Sportsequipment);
+    }
+
+
+    public void alibabaTab9() {
+        click(ElectricalEquipment);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void getElectricalEquipment(WebDriver driver){
+        hoverOver(driver,ElectricalEquipment);
+    }
+
+
+
+    public void alibabaTab8() {
+        click(ToolsHardwar);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void gettoolsHardwar(WebDriver driver){
+        hoverOver(driver,ToolsHardwar);
+    }
+
+    public void alibabaTab7() {
+        click(schoolsupplies);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void getSchoolsupplies(WebDriver driver){
+        hoverOver(driver,schoolsupplies);
+    }
+
+    public void alibabaTab6() {
+        click(BeautyPersonalCare);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+    public void getBeautycare(WebDriver driver){
+        hoverOver(driver, BeautyPersonalCare);
+    }
+
+    public void alibabaTab5() {
+        click(fabric);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+
+    public void getfabric(WebDriver driver){
+        hoverOver(driver, fabric);
+
+    }
+    public void alibabaTab4() {
+        click(lightsTools);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+
+    public void getLightsTools(WebDriver driver){
+        hoverOver(driver, lightsTools);
+
+    }
+
+
+    public void alibabaTab3() {
+        click(machinery);
+        Set<String> windows = driver.getWindowHandles();
+
+        Iterator<String> iterator = windows.iterator();
+        while (iterator.hasNext()) {
+            String parentTap = iterator.next();
+            String newTab = iterator.next();
+            driver.switchTo().window(newTab);
+
+            waitFor(2);
+        }
+    }
+
+public void  getmachinery(WebDriver driver){
+    hoverOver(driver, machinery);
+
+
+}
  public void getfacebook(){
      click(facebook);
  }

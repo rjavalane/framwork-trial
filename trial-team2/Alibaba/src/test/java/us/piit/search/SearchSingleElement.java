@@ -20,6 +20,6 @@ public class SearchSingleElement extends CommonAPI {
     public void searchecellphone() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.searchelements("cellphone");
-       //Assert.assertEquals(getTitle(),"Monitor-Monitor Manufacturers, Suppliers and Exporters on Alibaba.comTouch Screen Monitors");
+       Assert.assertEquals(getTitle(),"Cellphone-Cellphone Manufacturers, Suppliers and Exporters on Alibaba.comMobile Phones");
     }
 }

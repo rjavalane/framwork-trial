@@ -1,6 +1,8 @@
 package us.piit.participation;
 
 import base.CommonAPI;
+import jdk.internal.org.objectweb.asm.util.ASMifiable;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.*;
 
@@ -26,7 +28,11 @@ public class TestParticipation extends CommonAPI {
         account.clcikOnAccount();
         testParticipationPage.clickOnTestParticipation();
         testParticipationPage.clickOnAudioAndSubtitles();
+        Assert.assertEquals(loginPage.getTitle(), "Netflix");
 
     }
 
-}
+
+    }
+
+

@@ -744,12 +744,195 @@ public class TestLoginPage extends CommonAPI {
         changeStreamingPlan.clickOnCompanyAssets();
         Assert.assertEquals(loginPage.getTitle(), "Netflix Media Center");
     }
-
-
-
-
-
+    @Test
+    public void clickaboutnetflix(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnMediaCenter();
+        changeStreamingPlan.clickOnResources();
+        changeStreamingPlan.clickOnAboutNetflix();
+        changeStreamingPlan.clickOnNewsroom();
+        Assert.assertEquals(loginPage.getTitle(), "Netflix Media Center");
     }
+    @Test
+    public void clickNewsRoom(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnMediaCenter();
+        changeStreamingPlan.clickOnResources();
+        changeStreamingPlan.clickOnAboutNetflix();
+        changeStreamingPlan.clickOnNewsroom();
+        Assert.assertEquals(loginPage.getTitle(), "Netflix Media Center");
+    }
+    @Test
+    public void clickTopTen(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnMediaCenter();
+        changeStreamingPlan.clickOnResources();
+        changeStreamingPlan.clickOnAboutNetflix();
+        changeStreamingPlan.clickOnTopTen();
+    }
+    @Test
+    public void clickPrivacyStatment(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnPrivacyStatment();
+    }
+    @Test
+    public void clickJobs(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnJobs();
+        Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
+    }
+    @Test
+    public void clickGiftCards(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnGiftCards();
+        Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
+    }
+    @Test
+    public void clickcookiepreferences(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnCookiePreferences();
+        Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
+    }
+    @Test
+    public void clickInvestorRelations(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnInvestorRelations();
+        Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
+    }
+    @Test
+    public void clickTermsOfUse(){
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        Account account = new Account(driver);
+        ChangeStreamingPlan changeStreamingPlan = new ChangeStreamingPlan(driver);
+        loginPage.signInNetflix();
+        loginPage.typeEmailLogin();
+        loginPage.typePassword();
+        loginPage.clickSignInButton();
+        waitFor(2);
+        homepage.setSofAccount();
+        waitFor(3);
+        loginPage.hoverLogAccount(driver);
+        account.scrollDownToAccount();
+        waitFor(3);
+        account.clcikOnAccount();
+        changeStreamingPlan.clickOnTermsOfUse();
+        Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
+    }
+
+}
 
 
 

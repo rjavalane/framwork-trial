@@ -12,7 +12,7 @@
 
     <test name="Netflix test">
         <classes>
-            <!--            <class name="us.piit.AppTest"></class>-->
+<!--                        <class name="us.piit.participation.TestParticipation"></class>-->
             <class name="us.piit.loginpage.TestLoginPage"></class>
 
         </classes>

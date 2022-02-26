@@ -23,7 +23,7 @@ public class LogInWithWrongInfo extends CommonAPI {
         loginPage.inssertPassword();
        // loginPage.slideButtonToLeft();
         loginPage.cliclSubmit();
-        Assert.assertEquals(loginPage.getLoginPageTitle(),"Alibaba Manufacturer Directory - Suppliers, Manufacturers, Exporters & Importers");
+        Assert.assertEquals(getTitle(),"Alibaba Manufacturer Directory - Suppliers, Manufacturers, Exporters & Importers");
     }
 
 }

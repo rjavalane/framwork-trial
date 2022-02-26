@@ -1,6 +1,7 @@
 package us.piit.countrylist;
 
 import base.CommonAPI;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.HomePage;
 
@@ -12,5 +13,7 @@ public class CountrySelection extends CommonAPI {
         homePage.getshipto(driver);
         homePage.getcountry();
 //        homePage.countryname();
+
+
     }
 }

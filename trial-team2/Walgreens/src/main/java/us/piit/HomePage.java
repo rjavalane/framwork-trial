@@ -87,6 +87,9 @@ public class HomePage extends CommonAPI {
 
 
 
+
+
+
    public void  clickOnAccountBtn(){
        click(accountbtn);
    }

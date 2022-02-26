@@ -8,7 +8,7 @@ import us.piit.HomePage;
 import us.piit.LogInPage;
 
 public class TestGameVideos extends CommonAPI {
-    //@Test
+    @Test
     public void TestSolitaireGameVideo() {
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();

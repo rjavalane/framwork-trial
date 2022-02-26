@@ -76,8 +76,15 @@ public class MarketPlacePage extends CommonAPI {
     WebElement textTitle;
     @FindBy(xpath = "//span[contains(text(),'iPhone 13 max 128 fb')]")
     WebElement iphone13Max128;
-
-
+    @FindBy(xpath = "(//span[text()='Notify Me'])[1]")
+    WebElement notifiyMeBtn;
+    @FindBy(xpath = "(//input[@aria-label='Minimum Range'])[2]")
+    WebElement priceMinField;
+    @FindBy(xpath = "(//input[@aria-label='Maximum Range'])[2]")
+    WebElement priceMaxField;
+    @FindBy(xpath = "//span[text()='Create Alert']")
+    public
+    WebElement createAlertBtn;
 
     public void clickOnSettingIcon(){
         click(settingIcon);
@@ -195,6 +202,18 @@ public class MarketPlacePage extends CommonAPI {
     public void searchInOneClickAndClear(String itemToSearch){
         typeAndEnter(searchField2, itemToSearch);
         clear(searchField2);
+    }
+    public void clickOnNotifyMeBtn(){
+        click(notifiyMeBtn);
+    }
+    public void typeOnPriceMinField(){
+        type(priceMinField, "100");
+    }
+    public void typeOnPriceMaxField(){
+        type(priceMaxField, "200");
+    }
+    public void clickOnCreateAlert(){click(createAlertBtn);
+
     }
 
 

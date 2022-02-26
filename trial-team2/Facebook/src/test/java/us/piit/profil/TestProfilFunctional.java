@@ -18,9 +18,9 @@ public class TestProfilFunctional extends CommonAPI {
         ProfilPage profilPage = new ProfilPage(driver);
         profilPage.clickOnAccountIcon();
         profilPage.clickOnLogOut();
+        Assert.assertEquals(getTitle(), "Facebook - Log In or Sign Up");
 
     }
-
     @Test
     public void testFeedbackOption() {
         LogInPage loginPage = new LogInPage(driver);
@@ -35,8 +35,8 @@ public class TestProfilFunctional extends CommonAPI {
         Assert.assertEquals(profilPage.getText(), "Something went wrong");
         waitFor(5);
         profilPage.clickOnChooseAnAreaLink();
-        //profilPage.scrollDownIntoView();
         profilPage.typeOnDetailsField();
+        Assert.assertTrue(profilPage.submitButton.isEnabled());
         profilPage.clickOnSubmitButton();
     }
 
@@ -50,10 +50,11 @@ public class TestProfilFunctional extends CommonAPI {
         profilPage.clickOnAccountIcon();
         profilPage.clickOnhelpSupport();
         profilPage.clickOnhelpCenter();
-        Assert.assertEquals(profilPage.getTextDisplayed(), "How can we help you?");
         profilPage.clickOnSearchField();
-        profilPage.clickOnMarketOption();
-        profilPage.acceptAlert();
+        profilPage.scrollDownIntoMarketPlaceIcon();
+        profilPage.clickOnMarketPlaceIcon();
+        profilPage.clickOnYesButton();
+        Assert.assertEquals(profilPage.getTitle(), "Facebook Help Center");
         profilPage.typeTheDescription();
         profilPage.clickOnSubmitButton();
     }
@@ -68,9 +69,11 @@ public class TestProfilFunctional extends CommonAPI {
         profilPage.clickOnAccountIcon();
         profilPage.clickOnSettingPrivacy();
         profilPage.clickOnLanguageOption();
-        Assert.assertEquals(profilPage.getProfilePageTitle(), "(2) Facebook");
+        Assert.assertEquals(profilPage.getProfilePageTitle(), "Facebook");
+        waitFor(5);
         profilPage.clickOnEditLink();
-        profilPage.selectDropdownLanguage("Deutsch");
+        waitFor(3);
+        profilPage.selectDropdownLanguages();
         profilPage.clickOnSaveChanges();
 
     }

@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MoviesPage extends CommonAPI {
-    public MoviesPage(WebDriver driver){
+public class Movies extends CommonAPI {
+    public Movies(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver, this);
     }

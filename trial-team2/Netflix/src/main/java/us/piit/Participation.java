@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TestParticipationPage extends CommonAPI {
-    public TestParticipationPage(WebDriver driver) {
+public class Participation extends CommonAPI {
+    public Participation(WebDriver driver) {
         super.driver = driver;
         PageFactory.initElements(driver, this);
     }

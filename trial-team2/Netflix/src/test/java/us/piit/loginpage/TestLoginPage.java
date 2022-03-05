@@ -3,8 +3,6 @@ package us.piit.loginpage;
 import base.CommonAPI;
 //import org.testng.Assert;
 //import org.testng.annotations.Test;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.*;
@@ -40,11 +38,8 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         homePage.setIconSearchButton();
-        waitFor(2);
        //homePage.setSearchMovie("ozark");
 
 
@@ -57,11 +52,8 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.setTvShows();
-        waitFor(2);
         loginPage.clickGenres();
         loginPage.clickAction();
         loginPage.clickPlay();
@@ -75,13 +67,10 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
+
         loginPage.getHelpCenter();
-        waitFor(2);
         Assert.assertEquals(loginPage.getTitle(), "Netflix Help Center");
 
     }
@@ -93,13 +82,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         loginPage.clickPlansAndPricing();
         loginPage.clickBackToHelpHome();
         Assert.assertEquals(loginPage.getTitle(), "Plans and Pricing");
@@ -109,21 +94,17 @@ public class TestLoginPage extends CommonAPI {
     public void clickMovies(){
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
-        MoviesPage moviesPage = new MoviesPage(driver);
+        Movies moviesPage = new Movies(driver);
         loginPage.signInNetflix();
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         moviesPage.clickMovies();
         moviesPage.clickGenres();
         moviesPage.clickDocumentaries();
-        waitFor(2);
         moviesPage.scrollDocumentaries();
         moviesPage.hoverOverAmericanMurder(driver);
-        waitFor(2);
         moviesPage.clickAmericanMurder();
 
     }
@@ -132,16 +113,13 @@ public class TestLoginPage extends CommonAPI {
             public void clickKids() {
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
-        KidsPage kidsPage = new KidsPage(driver);
+        KidsMovies kidsPage = new KidsMovies(driver);
         loginPage.signInNetflix();
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         kidsPage.clickKids();
-        waitFor(2);
         kidsPage.hoverOverAvatar(driver);
         //kidsPage.clickMoreInfo();
        // kidsPage.clickClose();
@@ -155,16 +133,11 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         loginPage.clickIreceivedanemailstating();
         loginPage.clickBackToHelpHome();
-        waitFor(3);
         Assert.assertEquals(loginPage.getTitle(), "I received an email stating there was a new sign-in to my account");
 
     }
@@ -177,15 +150,10 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickHowToChangeYourPLan();
-        waitFor(2);
 
     }
    @Test
@@ -197,13 +165,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickHowToStopSomeoneFromUsingYourAccount();
 
     }
@@ -216,13 +180,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickNetflixSays();
     }
     @Test
@@ -234,13 +194,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickTroubleShoot();
     }
     @Test
@@ -252,13 +208,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clcickBillingAndPayments();
         Assert.assertEquals(loginPage.getTitle(), "Billing and Payments");
     }
@@ -271,13 +223,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickNetflixSaysYourAccountIsOnHold();
         Assert.assertEquals(loginPage.getTitle(), "Netflix says 'Your account is on hold because of a problem with your last payment.'");
 
@@ -291,13 +239,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickNetflixGiftCards();
         Assert.assertEquals(loginPage.getTitle(), "Netflix Gift Cards");
 
@@ -311,13 +255,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickHowtocreateandeditprofiles();
         Assert.assertEquals(loginPage.getTitle(), "How to create and edit profiles");
 
@@ -331,13 +271,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickHowToWatchNetflixOnYourTv();
         Assert.assertEquals(loginPage.getTitle(), "How to watch Netflix on your TV");
     }
@@ -350,13 +286,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homePage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
-        waitFor(3);
         loginPage.getHelpCenter();
-        waitFor(2);
         helpCenter.clickhowtodownloadtitlestowatchoffline();
         Assert.assertEquals(loginPage.getTitle(), "How to download titles to watch offline");
     }
@@ -368,11 +300,8 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         homepage.HoverOverMyList();
-        waitFor(4);
         Assert.assertEquals(loginPage.getTitle(), "Home - Netflix");
     }
     @Test
@@ -384,12 +313,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
 
@@ -403,12 +329,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnChangeEmail();
         Assert.assertEquals(loginPage.getTitle(), "Netflix");
@@ -423,17 +346,12 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnChangePassword();
-        waitFor(2);
         account.clickOnCancel();
-        waitFor(2);
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
 
     }
@@ -446,12 +364,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnChangePhoneNumber();
         Assert.assertEquals(loginPage.getTitle(), "Netflix");
@@ -465,12 +380,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnVerifyPhoneNumber();
         account.clickOnCancel();
@@ -485,12 +397,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnManagePaymentInfo();
         account.clickOnBackToAccount();
@@ -505,12 +414,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnAddBackUpPaymentMethod();
         account.clickOnRedeemAGiftCodeOrSpecialOfferCode();
@@ -525,12 +431,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnBillingDetails();
         Assert.assertEquals(loginPage.getTitle(), "Netflix");
@@ -544,12 +447,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnRedeemGiftCardOrPromoCode();
         account.clickOnBuyGiftCards();
@@ -564,12 +464,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         account.clickOnWhereToBuyGiftCards();
         account.clickOnBuyInStore();
@@ -585,12 +482,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnChangeStreamingPlan();
         changeStreamingPlan.clickOnGoBack();
@@ -606,12 +500,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnManageDownloadDevices();
         changeStreamingPlan.clickOnBackToAccount();
@@ -627,12 +518,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnActivateADevice();
         changeStreamingPlan.clickOnCancel();
@@ -648,12 +536,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnRecentDeviceStreamingActivity();
         Assert.assertEquals(loginPage.getTitle(), "Profile Lock - Account - Netflix");
@@ -668,12 +553,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnSignOutOfAllDevices();
         changeStreamingPlan.clickOnCancel();
@@ -689,12 +571,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnDownloadYourPersonalInformation();
         changeStreamingPlan.clickOnHelpCenter();
@@ -711,12 +590,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnAudioAndSubtitles();
         changeStreamingPlan.clickOnSubtitles();
@@ -732,12 +608,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnMediaCenter();
         changeStreamingPlan.clickOnResources();
@@ -754,12 +627,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnMediaCenter();
         changeStreamingPlan.clickOnResources();
@@ -777,12 +647,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnMediaCenter();
         changeStreamingPlan.clickOnResources();
@@ -800,12 +667,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnMediaCenter();
         changeStreamingPlan.clickOnResources();
@@ -822,12 +686,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnPrivacyStatment();
     }
@@ -841,12 +702,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnJobs();
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
@@ -861,12 +719,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnGiftCards();
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
@@ -881,12 +736,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnCookiePreferences();
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
@@ -901,12 +753,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnInvestorRelations();
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");
@@ -921,12 +770,9 @@ public class TestLoginPage extends CommonAPI {
         loginPage.typeEmailLogin();
         loginPage.typePassword();
         loginPage.clickSignInButton();
-        waitFor(2);
         homepage.setSofAccount();
-        waitFor(3);
         loginPage.hoverLogAccount(driver);
         account.scrollDownToAccount();
-        waitFor(3);
         account.clcikOnAccount();
         changeStreamingPlan.clickOnTermsOfUse();
         Assert.assertEquals(loginPage.getTitle(), "Account Settings - Netflix");

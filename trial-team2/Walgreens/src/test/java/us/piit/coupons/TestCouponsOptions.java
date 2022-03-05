@@ -10,7 +10,7 @@ import us.piit.SigninPage;
 
 public class TestCouponsOptions extends CommonAPI {
     @Test
-    public  void CouponsOptionsvailability(){
+    public  void couponsOptionsvailability(){
         HomePage homepage = new HomePage(driver);
         CouponsPage couponpage = new CouponsPage(driver);
 

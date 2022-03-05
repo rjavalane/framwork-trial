@@ -9,7 +9,7 @@ import us.piit.ProductsPage;
 
 public class TestRemoveProductFromCart extends CommonAPI {
     @Test
-    public void RemoveProductFromCart(){
+    public void removeProductFromCart(){
         HomePage homepage = new HomePage(driver);
         ProductsPage productpage = new ProductsPage(driver);
         CartPage cartpage = new CartPage(driver);

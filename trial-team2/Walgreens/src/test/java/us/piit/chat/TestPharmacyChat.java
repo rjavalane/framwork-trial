@@ -8,7 +8,7 @@ import us.piit.PharmacyChatPage;
 
 public class TestPharmacyChat extends CommonAPI {
     @Test
-    public void PharmacyChat(){
+    public void pharmacyChat(){
         HomePage homepage = new HomePage(driver);
         PharmacyChatPage pharmacychatpage= new PharmacyChatPage(driver);
 

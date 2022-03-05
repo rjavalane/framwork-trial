@@ -8,7 +8,7 @@ import us.piit.ServicesPage;
 
 public class TestHealthServices extends CommonAPI {
     @Test
-    public  void HealthServices(){
+    public  void healthServices(){
         HomePage homepage = new HomePage(driver);
         ServicesPage servicepage = new ServicesPage(driver);
 

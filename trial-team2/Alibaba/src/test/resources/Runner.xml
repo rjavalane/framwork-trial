@@ -5,7 +5,7 @@
     <parameter name="useCloudEnv" value="false"></parameter>
     <parameter name="cloudEnvName" value="browserstack"></parameter>
     <parameter name="os" value="windows"></parameter>
-    <parameter name="os_version" value="98"></parameter>
+    <parameter name="os_version" value="10"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="browserVersion" value="98"></parameter>
     <parameter name="url" value="https://www.alibaba.com/"></parameter>
@@ -13,10 +13,10 @@
     <test name="Alibaba test">
         <classes>
 
-<!--            <class name="us.piit.search.SearchSingleElement"></class>-->
-
-
             <class name="us.piit.search.SearchSingleElement"></class>
+
+
+<!--            <class name="us.piit.search.SearchSingleElement"></class>-->
 
 <!--            <class name="us.piit.search.SearchMultiElement"></class>-->
 <!--            <class name="us.piit.loging.LogInWithWrongInfo"></class>-->
@@ -28,7 +28,7 @@
 <!--            <class name="us.piit.scrolldownto.ScrollDownToNewArrivals"></class>-->
 <!--            <class name="us.piit.buyercentral.BuyerCentralList"></class>-->
 
-<!--            <class name="us.piit.changelanguage.selectlanguage"></class> -->
+<!--            <class name="us.piit.changelanguage.selectlanguage"></class>-->
 
 <!--            <class name="us.piit.changelanguage.selectlanguage"></class>-->
 

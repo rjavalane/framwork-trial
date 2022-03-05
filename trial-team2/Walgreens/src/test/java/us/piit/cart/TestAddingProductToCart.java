@@ -8,7 +8,7 @@ import us.piit.ProductsPage;
 
 public class TestAddingProductToCart extends CommonAPI {
     @Test
-    public void AddProductToCart(){
+    public void addProductToCart(){
         HomePage homepage = new HomePage(driver);
         ProductsPage productpage = new ProductsPage(driver);
 

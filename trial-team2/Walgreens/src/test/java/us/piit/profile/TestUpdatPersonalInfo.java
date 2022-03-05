@@ -9,7 +9,7 @@ import us.piit.SigninPage;
 
 public class TestUpdatPersonalInfo extends CommonAPI {
     @Test
-public void UpdatePersonalInformation(){
+public void updatePersonalInformation(){
         HomePage homepage = new HomePage(driver);
         SigninPage signinpage = new SigninPage(driver);
         ProfilPage profilpage = new ProfilPage(driver);

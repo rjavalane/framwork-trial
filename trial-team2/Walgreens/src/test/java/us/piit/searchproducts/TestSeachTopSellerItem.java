@@ -8,7 +8,7 @@ import us.piit.ProductsPage;
 
 public class TestSeachTopSellerItem extends CommonAPI {
     @Test
-    public void SearchItem() {
+    public void searchItem() {
         HomePage homepage = new HomePage(driver);
         ProductsPage productpage = new ProductsPage(driver);
 

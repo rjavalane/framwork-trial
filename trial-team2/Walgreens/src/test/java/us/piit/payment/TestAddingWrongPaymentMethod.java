@@ -10,7 +10,7 @@ import us.piit.SigninPage;
 
 public class TestAddingWrongPaymentMethod extends CommonAPI {
     @Test
-    public void AddingPaymentMethod(){
+    public void addingPaymentMethod(){
         HomePage homepage = new HomePage(driver);
         SigninPage signinpage = new SigninPage(driver);
         ProfilPage profilpage = new ProfilPage(driver);

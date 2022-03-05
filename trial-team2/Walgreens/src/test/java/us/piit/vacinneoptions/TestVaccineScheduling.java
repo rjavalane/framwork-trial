@@ -9,7 +9,7 @@ import us.piit.VaccinePage;
 public class TestVaccineScheduling extends CommonAPI{
 
     @Test
-    public void ScheduleCovidVaccin(){
+    public void scheduleCovidVaccin(){
         HomePage homepage = new HomePage(driver);
         VaccinePage vaccinepage = new VaccinePage(driver);
 

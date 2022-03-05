@@ -9,7 +9,7 @@ import zmq.socket.pubsub.Pub;
 
 public class TestSigningUpForJobAlerts extends CommonAPI {
     @Test
-    public void SigningUpForJobAlerts(){
+    public void signingUpForJobAlerts(){
         HomePage homepage = new HomePage(driver);
         CareerPage careerpage= new CareerPage(driver);
 

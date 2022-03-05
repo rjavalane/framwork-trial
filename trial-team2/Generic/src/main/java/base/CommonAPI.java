@@ -37,10 +37,10 @@ public class CommonAPI {
 
     public WebDriver driver;
 
-  //  Properties prop = GetProperties.loadProperties("C:\\Users\\Julian\\IdeaProjects\\web-automation-selenium-framework-team2\\Alibaba\\src\\test\\resources\\config.properties");
+    Properties prop = GetProperties.loadProperties("C:\\Users\\19176\\Desktop\\frameworkTrial\\trial-team2\\Facebook\\src\\test\\resources\\config.properties");
 
-    String browserstackUsername = "";
-    String browserstackPassword = "";
+    String browserstackUsername = "rachidalane_4tCEg8";
+    String browserstackPassword = "NhRx3z1YbppVQANR1Jxt";
 
     public static com.relevantcodes.extentreports.ExtentReports extent;
 
@@ -49,6 +49,8 @@ public class CommonAPI {
         ExtentManager.setOutputDirectory(context);
         extent = ExtentManager.getInstance();
     }
+
+
 
     @BeforeMethod
     public void startExtent(Method method) {

@@ -12,8 +12,12 @@
 
     <test name="Netflix test">
         <classes>
-<!--                        <class name="us.piit.participation.TestParticipation"></class>-->
+                        <class name="us.piit.participation.TestParticipation"></class>
             <class name="us.piit.loginpage.TestLoginPage"></class>
+            <class name="us.piit.tvshow.TestTvShow"></class>
+            <class name="us.piit.homemovies.TestHomeMovies"></class>
+            <class name="us.piit.newandpopular.TestNewAndPopular"></class>
+
 
         </classes>
     </test>

@@ -5,7 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.HomePage;
 import us.piit.LogInPage;
-import us.piit.ProfilPage;
 import us.piit.VotingInformationCenter;
 
 import java.util.Set;

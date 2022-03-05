@@ -31,6 +31,7 @@ public class TestGetInformationFromTheCenter extends CommonAPI {
             driver.switchTo().window(window);
             Assert.assertEquals(getTitle(), "Voting Assistance Guide");
             votingInformationCenter.hoverOverGeneralInformationBtn(driver);
+            Assert.assertTrue(votingInformationCenter.aboutTheLawsBtn.isEnabled());
             votingInformationCenter.clickOnAboutTheLawsBtn();
             Assert.assertEquals(getTitle(), "About the Laws");
         }

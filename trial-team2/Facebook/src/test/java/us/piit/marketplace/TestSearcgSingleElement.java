@@ -10,7 +10,7 @@ import us.piit.MarketPlacePage;
 
 public class TestSearcgSingleElement extends CommonAPI {
 
-    //@Test
+    @Test
     public void testSearchElement() {
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();

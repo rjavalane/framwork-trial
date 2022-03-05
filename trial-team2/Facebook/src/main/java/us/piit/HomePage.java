@@ -39,31 +39,45 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//span[text()='Public']")
     WebElement publicOption;
     @FindBy(xpath = "//span[text()='Create']")
+    public
     WebElement createButton;
     @FindBy(xpath = "//span[text()='Event']")
     WebElement searchEvent;
     @FindBy(xpath = "//span[text()='Get together with people at a specific location.']")
     WebElement inPersonOption;
-    @FindBy(xpath = "//span[text()='Event Name']")
+    @FindBy(xpath = "//label[@aria-label='Event Name']")
     WebElement eventNameField;
-    @FindBy(xpath = "//input[@value='Feb 19, 2022']")
+    @FindBy(xpath = "(//label[@aria-label='Choose Date'])[1]")
+    WebElement startDateBtn;
+    @FindBy(xpath = "(//div[@aria-current='date'])[7]")
     WebElement startDate;
-    @FindBy(xpath = "//input[@value='3:00 PM']")
+    @FindBy(xpath = "//label[@aria-label='Start Time']")
+    WebElement startTimeBtn;
+    @FindBy(xpath = "//span[text()='3:00 PM']")
     WebElement startTime;
-    @FindBy(xpath = "//input[@value='Feb 19, 2022']")
+    @FindBy(xpath = "//span[text()='End Date and Time']")
+    WebElement endDateAndTimeBtn;
+    @FindBy(xpath = "(//label[@aria-label='Choose Date'])[2]")
+    WebElement endDateBtn;
+    @FindBy(xpath = "(//div[@aria-current='date'])[7]")
     WebElement endDate;
-    @FindBy(xpath = "//input[@value='6:00 PM']")
+    @FindBy(xpath = "//label[@aria-label='End Time']")
+    WebElement endTimeBtn;
+    @FindBy(xpath = "//span[text()='6:00 PM']")
     WebElement endTime;
     @FindBy(xpath = "//span[text()='Only people who are invited']")
     WebElement privateEvent;
     @FindBy(xpath = "//span[text()='Next']")
+    public
     WebElement nextButton;
-    @FindBy(xpath = "//input[@id='jsc_c_ds']")
+    @FindBy(xpath = "//label[@aria-label='Location']")
     WebElement locationEvent;
-    @FindBy(xpath = "//span[text()='Description']")
+    @FindBy(xpath = "//label[@aria-label='Description']")
     WebElement descriptionEvent;
-    @FindBy(xpath = "//span[text()='Create event']")
+    @FindBy(xpath = "//span[text()='Publish event']")
     WebElement createEventButton;
+    @FindBy(xpath = "//span[text()='SATURDAY AT 3 PM – 6 PM']")
+    WebElement textMessageEvent;
     @FindBy(xpath = "//span[text()='COVID-19 Information Center']")
     WebElement coronavirusInfoCenter;
     @FindBy(xpath = "(//span[text()='Follow'])[1]")
@@ -76,37 +90,55 @@ public class HomePage extends CommonAPI {
     WebElement forYouBtn;
     @FindBy(xpath = "//span[text()='Earlier']")
     WebElement textTitle;
-
+    @FindBy(xpath = "//span[text()='Page']")
+    WebElement pageBtn;
+    @FindBy(xpath = "//label[@aria-label='Page name (required)']")
+    WebElement pageNameField;
+    @FindBy(xpath = "//label[@aria-label='Category (required)']")
+    WebElement categoryField;
+    @FindBy(xpath = "//div[@aria-label='Create Page']")
+    public
+    WebElement createPageBtn;
+    @FindBy(xpath = "(//span[text()='Public Service'])[2]")
+    WebElement publicServiceCategory;
+    @FindBy(xpath = "//div[@aria-label='Preview in Desktop Layout']")
+    public
+    WebElement titlePageCreated;
+    public String getTitlePage(){return getText(titlePageCreated);}
+    public void clickOnPublicServiceCategory(){click(publicServiceCategory);}
+    public void clickOnCreatePageBtn(){click(createPageBtn);}
+    public void typeOnCategoryField(){type(categoryField, "Public Service");}
+    public void typeOnPageNameField(){type(pageNameField, "Kabylie my county");}
+    public void clickOnPageBtn(){click(pageBtn);}
     public void selectFromDropDownMenu() {
         selectDropdownOption(searchMenu, "Life event");
     }
 
-    public void clickOnEventLink() {
-        click(searchEvent);
-    }
+    public void clickOnEventLink() {click(searchEvent);}
 
-    public void clickOnInPersonOption() {
-        click(inPersonOption);
-    }
+    public void clickOnInPersonOption() {click(inPersonOption);}
 
-    public void clickOnStartDayEvent() {
-        click(startDate);
-    }
+    public void clickOnStartDayEvent() {click(startDateBtn);}
 
-    public void clickOnStarTimeEvent() {
-        click(startTime);
-    }
+    public void clickOnStarTimeEvent() {click(startTimeBtn);}
 
-    public void clickOnEndDayEvent() {
-        click(endDate);
-    }
+    public void clickOnEndDayEvent() {click(endDateBtn);}
+    public void clickOnStartDate() {click(startDate);}
+
+    public void clickOnStartTime() {click(startTime);}
+
+    public void clickOnEndDateAndTime() {click(endDateAndTimeBtn);}
+
+    public void clickOnEndDate() {click(endDate);}
+
+    public void clickOnEndTime() {click(endTime);}
 
     public void clickOnEndTimeEvent() {
-        click(endTime);
+        click(endTimeBtn);
     }
 
     public void typeEventName() {
-        type(eventNameField, "Jhon's birthday");
+        type(eventNameField, "John's birthday");
     }
 
     public void typeLocationEvent() {
@@ -114,7 +146,7 @@ public class HomePage extends CommonAPI {
     }
 
     public void typeDescriptionEvent() {
-        type(descriptionEvent, "Jhon will celebrate his 100 birthday ");
+        type(descriptionEvent, "John will celebrate his 100 birthday ");
     }
 
     public void clickOnPrivateEvent() {
@@ -150,6 +182,7 @@ public class HomePage extends CommonAPI {
         public String getHomePageTitle () {
             return getTitle();
         }
+        public String getTextMessageEvent(){return getText(textMessageEvent);}
 
         public void typeGroupName () {
             type(groupName, "weekend soccer");

@@ -1,11 +1,11 @@
-package us.piit.profil;
+package us.piit.account;
 
 import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.HomePage;
 import us.piit.LogInPage;
-import us.piit.ProfilPage;
+import us.piit.AccountPage;
 
 public class TestTextingFriendFromMessenger extends CommonAPI {
 
@@ -14,16 +14,19 @@ public class TestTextingFriendFromMessenger extends CommonAPI {
 
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();
-        HomePage homePage=new HomePage(driver);
-        ProfilPage profilPage=new ProfilPage(driver);
         Assert.assertEquals(getTitle(),"Facebook - Log In or Sign Up");
+        HomePage homePage=new HomePage(driver);
+        AccountPage accountPage=new AccountPage(driver);
         homePage.clickOnHomePage();
         homePage.clickOnMenu();
-        profilPage.clickOnMessengerBtn();
-        profilPage.typeOnSearchMessengerField();
-        profilPage.clickOnNameProfile();
-        profilPage.typeOnMessageField();
-        profilPage.clickOnSendBtn();
+        accountPage.scrollDownIntoMessengerBtn();
+        accountPage.typeOnSearchMessengerField();
+        accountPage.clickOnNameProfile();
+        accountPage.typeOnMessageField();
+        Assert.assertTrue(accountPage.sendBtn.isEnabled());
+        accountPage.clickOnSendBtn();
+        Assert.assertEquals(getTitle(),"Messenger | Facebook");
+
 
     }
 

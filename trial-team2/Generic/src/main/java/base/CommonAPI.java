@@ -37,10 +37,10 @@ public class CommonAPI {
 
     public WebDriver driver;
 
-  //  Properties prop = GetProperties.loadProperties("C:\\Users\\Julian\\IdeaProjects\\web-automation-selenium-framework-team2\\Alibaba\\src\\test\\resources\\config.properties");
+   Properties prop = GetProperties.loadProperties("C:\\Users\\Amar\\Desktop\\trial team2\\framwork-trial\\trial-team2\\Facebook\\src\\test\\resources\\config.properties");
 
-    String browserstackUsername = "";
-    String browserstackPassword = "";
+    String browserstackUsername = "amararris_T5AV8z";
+    String browserstackPassword = "zybPX7QjFA58Zv6hcZPF";
 
     public static com.relevantcodes.extentreports.ExtentReports extent;
 

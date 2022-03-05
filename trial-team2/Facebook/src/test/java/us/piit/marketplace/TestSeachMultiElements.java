@@ -14,9 +14,9 @@ public class TestSeachMultiElements extends CommonAPI {
     DataReader dr = new DataReader();
 
     public List<String> getItemsFromExcel(){
-        return dr.getEntireColumnForGivenHeader("..\\Facebook\\src\\data\\my-data.xlsx", "Sheet1",  "list");
+        return dr.getEntireColumnForGivenHeader("C:\\Users\\Amar\\IdeaProjects\\web-automation-selenium-framework-team2\\Facebook\\src\\data\\my-data.xlsx", "Sheet1",  "list");
     }
-    //@Test
+    @Test
     public void searchItems(){
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();

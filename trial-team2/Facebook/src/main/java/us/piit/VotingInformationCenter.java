@@ -36,14 +36,17 @@ public class VotingInformationCenter extends CommonAPI {
     @FindBy(xpath = "//a[text()='General Information']")
     WebElement generalInformationBtn;
     @FindBy(xpath = "(//a[text()='About the Laws'])[1]")
+    public
     WebElement aboutTheLawsBtn;
     @FindBy(xpath = "(//span[text()='Manage Location'])[1]")
     WebElement manageLocationBtn;
     @FindBy(xpath = "//span[text()='Enter Address']")
     WebElement enterAddressBtn;
     @FindBy(xpath = "(//input[@role='combobox'])[2]")
+    public
     WebElement searchAddressField;
     @FindBy(xpath = "(//span[text()='Save'])[1]")
+    public
     WebElement saveBtn;
     @FindBy(xpath = "(//span[text()='77 77th St, Brooklyn'])[1]")
     WebElement addressDisplayed;

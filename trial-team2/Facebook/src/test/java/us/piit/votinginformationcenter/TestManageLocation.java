@@ -17,17 +17,15 @@ public class TestManageLocation extends CommonAPI {
         HomePage homePage=new HomePage(driver);
         VotingInformationCenter votingInformationCenter=new VotingInformationCenter(driver);
         Assert.assertEquals(getTitle(),"Facebook - Log In or Sign Up");
-        waitFor(2);
         homePage.clickOnHomePage();
         homePage.clickOnMenu();
         votingInformationCenter.scrollDownToVotingInformationCenterBtn();
         votingInformationCenter.clickOnManageLocationBtn();
         Assert.assertEquals(getTitle(), "Voting Information Center | Facebook");
         votingInformationCenter.clickOnEnterAddressBtn();
-        waitFor(2);
+        Assert.assertTrue(votingInformationCenter.searchAddressField.isEnabled());
         votingInformationCenter.typeOnSearchAddressField();
+        Assert.assertTrue(votingInformationCenter.saveBtn.isEnabled());
         votingInformationCenter.clickOnsaveBtn();
-        //Assert.assertEquals(votingInformationCenter.getAddressDisplayed(),"77 77th St, Brooklyn");
-
     }
 }

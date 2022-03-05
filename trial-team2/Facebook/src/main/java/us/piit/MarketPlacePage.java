@@ -21,7 +21,7 @@ public class MarketPlacePage extends CommonAPI {
     WebElement marketPlace;
     @FindBy(xpath = "//h1[text()='Marketplace']")
     WebElement text;
-    @FindBy(xpath = "(//input[@type='search'])[2]")
+    @FindBy(xpath = "(//input[@placeholder='Search Marketplace'])[1]")
     WebElement searchField2;
     @FindBy(xpath = "(//span[text()='Ships to you'])[1]")
     WebElement iteamShoes;

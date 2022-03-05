@@ -11,15 +11,17 @@ public class TestCreateGroup extends CommonAPI {
     public void createGroup() {
         LogInPage loginPage = new LogInPage(driver);
         loginPage.signInWithValidCredentials();
+        Assert.assertEquals(getTitle(),"Facebook - Log In or Sign Up");
         HomePage homePage=new HomePage(driver);
         homePage.clickOnHomePage();
         homePage.clickOnMenu();
         homePage.clickOnTheLinkGroup();
-        Assert.assertEquals(homePage.getHomePageTitle(),"Facebook");
         homePage.typeGroupName();
         homePage.clickOnChoosePrivacy();
         homePage.clickOnpublicOption();
+        Assert.assertTrue(homePage.createButton.isEnabled());
         homePage.clickOnButtonCreate();
+        Assert.assertEquals(homePage.getHomePageTitle(),"Create group | Facebook");
 
     }
 }
